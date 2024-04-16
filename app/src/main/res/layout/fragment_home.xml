@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/Todos"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginBottom="28dp"
+        android:background="#8692F7"
+        android:gravity="center_vertical"
+        android:text="Todos"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Click the radio button to mark the task complete. It will automatically update in 3 seconds." />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="567dp"
+        android:layout_below="@id/Todos"
+        android:layout_marginTop="20dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/todoItemsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </RadioGroup>
+    </ScrollView>
+
+
+</RelativeLayout>

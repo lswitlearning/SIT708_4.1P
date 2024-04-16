@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ModifyFragment">
+
+    <TextView
+        android:id="@+id/Todos"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="#8692F7"
+        android:gravity="center_vertical"
+        android:text="Click and Edit Todos"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:layout_below="@id/Todos"
+        android:layout_marginTop="-24dp">
+
+        <LinearLayout
+            android:id="@+id/todoItemsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/todoItemsLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="514dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/bg"
+        android:text="Edit" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/modify_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>
